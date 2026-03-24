@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Globe Site</title>
+  <title>My Globe</title>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
-<body>
-  <h1>🌍 My Interactive Globe</h1>
-  <p>Coming soon...</p>
+<body style="margin:0; background:black;">
+
+  <model-viewer 
+    src="models/earth.glb"
+    auto-rotate
+    camera-controls
+    style="width: 100vw; height: 100vh;">
+  </model-viewer>
+
 </body>
 </html>
